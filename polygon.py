@@ -1,7 +1,7 @@
 class Polygon:
-    def __init__(self, height, width) -> None:
-        self.height = height
-        self.width = width
+    def __init__(self, a,b) -> None:
+        self.a = a
+        self.b = b
 
     def getArea(self):
         """
@@ -12,7 +12,7 @@ class Polygon:
         Returns:
             float or int: return perimeter of the polygon.
         """
-        pass
+        return self.a*self.b
 
     def getPerimeter(self):
         """
@@ -23,4 +23,6 @@ class Polygon:
         Returns:
             float or int: return perimeter of the polygon.
         """
-        pass
+        return 2*(self.a+self.b)
+answer=Polygon(4,6)
+print(answer.getArea())
